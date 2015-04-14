@@ -15,12 +15,19 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="">Home</a></li>
+
+        <form id="uploadForm" style="visibility:hidden; position:fixed" action="/upload" method="POST" enctype="multipart/form-data">
+          <input id="fileChooser" type="file" name="file">
+          <input type="submit">
+        </form>
+
+        <li><a class="glyphicon glyphicon-cloud-upload" style="cursor:pointer"></a></li>
+
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/rs">Caleb</a></li>
-            <li><a href="/wot">Laura</a></li>
+            <li><a href="">Caleb</a></li>
+            <li><a href="">Laura</a></li>
           </ul>
         </li>
       </ul>

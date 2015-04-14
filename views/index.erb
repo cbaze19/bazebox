@@ -18,16 +18,19 @@
         </tr>
       </thead>
       <tbody>
+        <% for i in 0..filenames.size-1 %>
         <tr>
-          <td></td>
-          <td>readme.txt</td>
-          <td>10KB</td>
+          <td style="padding-left:40px"><a class="glyphicon glyphicon-remove-circle" href="/delete/<%= filenames[i] %>"></a></td>
+          <td><a href="/download/<%= filenames[i] %>"><%= filenames[i] %></a></td>
+          <td ><%= filesizes[i] %></td>
           <td>04/14/2015</td>
         </tr>
+        <% end %>
       </tbody>
     </table>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/upload.js"></script>
   </body>
 </html>
