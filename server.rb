@@ -1,7 +1,7 @@
 require 'sinatra'
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  username == 'baze' and password == 'yukon1992'
+  username == '' and password == ''
 end
 
 get '/' do
