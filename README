@@ -3,3 +3,8 @@ Created by Caleb Baze
 Personal Dropbox-Like Site
 
 Created in Ruby - Sinatra Webserver
+
+To access app from public IP:
+- In server.rb:
+	- Uncomment: set :environment, :production
+	- This will run the app in production mode, allowing access
