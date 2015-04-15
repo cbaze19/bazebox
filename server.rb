@@ -10,7 +10,7 @@ require 'filesize'
 set :environment, :production
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  username == '' and password == ''
+  username == 'baze' and password == 'yukon1992'
 end
 
 get '/' do
